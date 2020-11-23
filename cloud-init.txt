@@ -20,6 +20,7 @@ write_files:
 
             forwarders {
                     8.8.8.8;
+                    8.8.4.4;
             };
 
             querylog yes;
@@ -40,6 +41,60 @@ write_files:
                 forwarders { 168.63.129.16; };
         };
 
+        zone "azure-api.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "cloudapp.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "management.core.windows.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "azurewebsites.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "azure.com" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "metrics.nsatc.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "microsoftazurelogicapps.net" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "msocsp.com" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "microsoft.com" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "digicert.com" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
+
+		zone "thawte.com" {
+				type forward;
+				forwarders { 168.63.129.16; };
+		};
 
         logging {
             channel default_file {
